@@ -1,0 +1,21 @@
+@model MiProyectoWeb.Models.Producto
+
+<h1>Editar Producto</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Nombre</label><br />
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Precio</label><br />
+        <input asp-for="Precio" />
+    </div>
+    <br />
+    <button type="submit">Guardar cambios</button>
+</form>
+
+<p>
+    <a asp-action="Index">Volver a la lista</a>
+</p>

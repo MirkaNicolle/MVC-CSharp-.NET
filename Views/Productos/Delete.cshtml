@@ -1,0 +1,20 @@
+@model MiProyectoWeb.Models.Producto
+
+<h1>Eliminar Producto</h1>
+
+<h3>¿Estás seguro que deseas eliminar este producto?</h3>
+
+<div>
+    <strong>Nombre:</strong> @Model.Nombre <br />
+    <strong>Precio:</strong> @Model.Precio
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <br />
+    <button type="submit">Eliminar</button>
+</form>
+
+<p>
+    <a asp-action="Index">Volver a la lista</a>
+</p>

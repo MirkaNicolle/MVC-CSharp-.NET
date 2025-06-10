@@ -1,0 +1,15 @@
+@model MiProyectoWeb.Models.Producto
+
+<h1>Crear Producto</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Precio</label>
+        <input asp-for="Precio" />
+    </div>
+    <button type="submit">Guardar</button>
+</form>
